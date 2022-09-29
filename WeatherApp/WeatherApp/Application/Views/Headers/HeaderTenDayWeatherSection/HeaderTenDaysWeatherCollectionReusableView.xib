@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderTenDaysWeatherCollectionReusableView" id="U6b-Vx-4bR" customClass="HeaderTenDaysWeatherCollectionReusableView" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="8-DAY FORECAST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiW-GM-bAD">
+                    <rect key="frame" x="36.5" y="0.0" width="283.5" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="keZ-Jo-xT2">
+                    <rect key="frame" x="10" y="-2" width="26.5" height="54"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <imageReference key="image" image="calendar" catalog="system" symbolScale="large"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="keZ-Jo-xT2" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="2gt-4A-mwd"/>
+                <constraint firstItem="TiW-GM-bAD" firstAttribute="leading" secondItem="keZ-Jo-xT2" secondAttribute="trailing" id="IgB-Tw-b8h"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="TiW-GM-bAD" secondAttribute="bottom" id="XDS-Ne-0dy"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="keZ-Jo-xT2" secondAttribute="bottom" id="df9-js-Hwx"/>
+                <constraint firstItem="TiW-GM-bAD" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="h4f-a9-aMF"/>
+                <constraint firstAttribute="trailing" secondItem="TiW-GM-bAD" secondAttribute="trailing" id="pfc-uE-VSa"/>
+                <constraint firstItem="keZ-Jo-xT2" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="z3I-Bs-D6x"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+    </resources>
+</document>

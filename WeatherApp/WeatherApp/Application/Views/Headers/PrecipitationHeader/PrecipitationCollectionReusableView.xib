@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PrecipitationCollectionReusableView" id="U6b-Vx-4bR" customClass="PrecipitationCollectionReusableView" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  PRECIPITATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYf-RU-gnh">
+                    <rect key="frame" x="21" y="0.0" width="299" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xq9-tI-IgG">
+                    <rect key="frame" x="0.0" y="0.5" width="21" height="49"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="Dp7-c4-6AO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="JYf-RU-gnh" secondAttribute="bottom" id="Mhr-Ey-3e0"/>
+                <constraint firstItem="Xq9-tI-IgG" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="S1P-4Z-1cR"/>
+                <constraint firstItem="JYf-RU-gnh" firstAttribute="leading" secondItem="Xq9-tI-IgG" secondAttribute="trailing" id="UQX-BQ-gJm"/>
+                <constraint firstAttribute="bottom" secondItem="Xq9-tI-IgG" secondAttribute="bottom" id="YVR-ni-jM7"/>
+                <constraint firstItem="JYf-RU-gnh" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="h4a-YC-7an"/>
+                <constraint firstItem="Xq9-tI-IgG" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="jYf-iU-HJt"/>
+                <constraint firstAttribute="trailing" secondItem="JYf-RU-gnh" secondAttribute="trailing" id="qYC-Sy-8gn"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="84"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="drop.fill" catalog="system" width="101" height="128"/>
+    </resources>
+</document>

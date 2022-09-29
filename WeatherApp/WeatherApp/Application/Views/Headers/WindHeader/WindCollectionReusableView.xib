@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WindCollectionReusableView" id="U6b-Vx-4bR" customClass="WindCollectionReusableView" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  WIND                            PRECIPITATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCt-Ca-gwc">
+                    <rect key="frame" x="21" y="0.0" width="299" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gRF-91-Wjk">
+                    <rect key="frame" x="0.0" y="2" width="21" height="47"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="21" id="D4s-Wp-rCc"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gRF-91-Wjk" secondAttribute="bottom" id="1fu-Kb-vG4"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="OCt-Ca-gwc" secondAttribute="bottom" id="2BU-4z-NLh"/>
+                <constraint firstItem="gRF-91-Wjk" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="7ze-gh-T8u"/>
+                <constraint firstItem="OCt-Ca-gwc" firstAttribute="leading" secondItem="gRF-91-Wjk" secondAttribute="trailing" id="BJB-dF-GUF"/>
+                <constraint firstAttribute="trailing" secondItem="OCt-Ca-gwc" secondAttribute="trailing" id="CiR-1b-fVg"/>
+                <constraint firstItem="OCt-Ca-gwc" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="RK3-Nl-vls"/>
+                <constraint firstItem="gRF-91-Wjk" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="hqj-dD-X3R"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="wind" catalog="system" width="128" height="103"/>
+    </resources>
+</document>

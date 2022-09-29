@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TenDaysWeatherCollectionViewCell" id="gTV-IL-0wX" customClass="TenDaysWeatherCollectionViewCell" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffr-DP-FDD">
+                        <rect key="frame" x="15" y="15" width="44" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="7qj-Sc-a0O"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkv-jn-I4Z">
+                        <rect key="frame" x="147" y="15" width="0.0" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="PD5-kg-bhz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="sDZ-Vz-Ecc">
+                        <rect key="frame" x="191" y="30" width="84" height="2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="1dy-Wi-yvs"/>
+                            <constraint firstAttribute="width" constant="84" id="8He-DR-2dG"/>
+                        </constraints>
+                        <color key="progressTintColor" red="1" green="0.89774372314017992" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="trackTintColor" red="1" green="0.55141421547891623" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6V-ms-G6F">
+                        <rect key="frame" x="299" y="15" width="26" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OUw-tD-UVE">
+                        <rect key="frame" x="76.5" y="5" width="57" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="57" id="Y5w-bH-OR1"/>
+                            <constraint firstAttribute="height" constant="45" id="gXf-JV-2dp"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tkv-jn-I4Z" firstAttribute="leading" secondItem="OUw-tD-UVE" secondAttribute="trailing" constant="13.5" id="4T6-jX-qjE"/>
+                <constraint firstItem="OUw-tD-UVE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="50o-t1-F0y"/>
+                <constraint firstItem="s6V-ms-G6F" firstAttribute="leading" secondItem="sDZ-Vz-Ecc" secondAttribute="trailing" constant="24" id="DOV-Ge-Swg"/>
+                <constraint firstItem="s6V-ms-G6F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="Nc3-rC-rFP"/>
+                <constraint firstAttribute="bottom" secondItem="tkv-jn-I4Z" secondAttribute="bottom" constant="15" id="Orm-4X-gy4"/>
+                <constraint firstItem="OUw-tD-UVE" firstAttribute="leading" secondItem="Ffr-DP-FDD" secondAttribute="trailing" constant="17.5" id="Tih-Pt-fYc"/>
+                <constraint firstItem="sDZ-Vz-Ecc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="191" id="bIl-Ij-gfd"/>
+                <constraint firstItem="Ffr-DP-FDD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="cfT-q1-7pj"/>
+                <constraint firstItem="sDZ-Vz-Ecc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="gba-vz-Tvu"/>
+                <constraint firstAttribute="bottom" secondItem="Ffr-DP-FDD" secondAttribute="bottom" constant="15" id="iXb-1z-cKl"/>
+                <constraint firstItem="Ffr-DP-FDD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="jQt-Uy-F7v"/>
+                <constraint firstAttribute="trailing" secondItem="s6V-ms-G6F" secondAttribute="trailing" constant="10" id="vo1-SM-Hyd"/>
+                <constraint firstItem="tkv-jn-I4Z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="xvg-TL-jm0"/>
+                <constraint firstAttribute="bottom" secondItem="OUw-tD-UVE" secondAttribute="bottom" constant="6" id="yOj-b3-aNv"/>
+                <constraint firstAttribute="bottom" secondItem="s6V-ms-G6F" secondAttribute="bottom" constant="15" id="zwr-Mq-eC8"/>
+            </constraints>
+            <size key="customSize" width="335" height="59"/>
+            <connections>
+                <outlet property="DayLabel" destination="Ffr-DP-FDD" id="pwk-XQ-Ltb"/>
+                <outlet property="tempMaxLabel" destination="s6V-ms-G6F" id="E2N-VN-NgC"/>
+                <outlet property="tempMinLabel" destination="tkv-jn-I4Z" id="FdX-VL-zQR"/>
+                <outlet property="weatherImage" destination="OUw-tD-UVE" id="EO3-dq-D1P"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="46.875"/>
+        </collectionViewCell>
+    </objects>
+</document>
